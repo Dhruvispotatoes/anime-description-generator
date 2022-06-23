@@ -172,6 +172,12 @@ nav ul a:hover {
 	gap: 2rem;
 }
 
+@media screen and (max-width: 48em) {
+	.area {
+		flex-direction: column;
+	}
+}
+
 .area > * {
 	flex: 1;
 	margin: 0 0 1rem 0;
