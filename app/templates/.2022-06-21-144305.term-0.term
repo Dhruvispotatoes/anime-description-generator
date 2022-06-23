@@ -1,0 +1,49 @@
+(base) ]0;~/Anime-Description-Generator/app/templates[01;34m~/Anime-Description-Generator/app/templates[00m$ main [K[K[K[K[Kcd ..
+(base) ]0;~/Anime-Description-Generator/app[01;34m~/Anime-Description-Generator/app[00m$ main [K[K[K[K[Kpython main-daniel.py
+2022-06-21 18:43:26.530329: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-06-21 18:43:26.530377: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Try to open
+
+    https://cocalc9.ai-camp.dev/ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65420/
+
+
+ * Serving Flask app 'main-daniel' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Address already in use
+Port 65420 is in use by another program. Either identify and stop that program, or start the server with a different port.
+(base) ]0;~/Anime-Description-Generator/app[01;34m~/Anime-Description-Generator/app[00m$ python main-daniel.py
+2022-06-21 18:44:02.174328: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-06-21 18:44:02.175357: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Try to open
+
+    https://cocalc9.ai-camp.dev/ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/
+
+
+ * Serving Flask app 'main-daniel' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:65421
+ * Running on http://172.17.0.2:65421 (Press CTRL+C to quit)
+ * Restarting with stat
+2022-06-21 18:44:21.275321: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-06-21 18:44:21.276436: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Try to open
+
+    https://cocalc9.ai-camp.dev/ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/
+
+
+ * Debugger is active!
+ * Debugger PIN: 109-457-385
+127.0.0.1 - - [21/Jun/2022 18:44:39] "GET /ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/ HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jun/2022 18:44:40] "GET /ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/static/index.js HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jun/2022 18:44:40] "GET /ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/static/index.css HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jun/2022 18:44:40] "GET /ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/static/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jun/2022 18:44:40] "GET /ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/static/aicamp.png HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jun/2022 18:44:40] "GET /ddfbcc4e-fb6a-46d3-a108-cd26783e2648/port/65421/static/bg.jpg HTTP/1.1" 200 -

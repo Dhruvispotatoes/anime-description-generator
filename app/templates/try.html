@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Try It &ndash; Anime Description Generator</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="{{ url_for('static', filename='/main.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='/favicon.ico') }}"
+			type="image/x-icon">
+	</head>
+
+	<body>
+		<nav>
+			<div class="constrain">
+				<img src="{{ url_for('static', filename='/img/aicamp.png') }}" alt="AI Camp Logo">
+				<ul>
+					<li><a href="{{ url_for('home') }}">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="banner">
+			<div class="hero-bg"></div>
+			<div class="hero-box constrain">
+				<div class="left">
+					<h1>Try It</h1>
+					<p>Use our model in your browser!</p>
+				</div>
+				<div class="right">
+					<img src="{{ url_for('static', filename='/img/book.png') }}"
+						alt="Barbara holding a python img/book">
+				</div>
+			</div>
+		</header>
+
+		<div class="constrain area">
+			<div>
+				<h2>Prompt</h2>
+				<form action="{{ url_for('try_') }}" method="post">
+					<input type="text" name="prompt" id="prompt" class="prompt" value="{{ prompt }}"
+						placeholder="Enter your prompt here..." />
+					<p class="range">
+						<label for="amount">Number of Descriptions: <span
+								id="amount-output"></span></label>
+						<input type="range" name="amount" id="amount" min="1" max="10" step="1"
+							value="{{ amount }}">
+					</p>
+					<p class="range">
+						<label for="temperature">Temperature: <span
+								id="temperature-output"></span></label>
+						<input type="range" name="temperature" id="temperature" min="0.05" max="2"
+							step="0.05" value="{{ temperature }}">
+					</p>
+					<input type="submit" value="Generate Text" class="generate">
+				</form>
+			</div>
+			<div>
+				<h2>Outputs</h2>
+				{% for result in output %}
+				<pre class="output">{{ result }}</pre>
+				{% endfor %}
+			</div>
+		</div>
+
+		<script>
+			const ranges = ["amount", "temperature"];
+
+			for (const id of ranges) {
+				const range = document.getElementById(id);
+				const output = document.getElementById(`${id}-output`);
+				range.addEventListener("input", e => {
+					output.textContent = e.target.value;
+				});
+				output.textContent = range.value;
+			}
+		</script>
+	</body>
+</html>
