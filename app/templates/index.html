@@ -44,13 +44,29 @@
 						alt="AI Camp Logo">
 				</a>
 				<ul>
-					<li><a href="#home" data-to="home">Home</a></li>
+					<li><a href="#product" data-to="product">The Product</a></li>
 					<li><a href="#process" data-to="process">The Process</a></li>
 					<li><a href="#team" data-to="team">Our Team</a></li>
 					<li><a href="{{ url_for('try_') }}">Try It Out</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<div class="bg-light product">
+			<div class="constrain section-header" id="product">
+				<h2>The Product</h2>
+			</div>
+
+			<div class="constrain">
+				<p>
+					Our product is a web application that generates random anime descriptions based
+					on a prompt given by the user. The prompt can be any sentence or phrase, and the
+					model will attempt to continue it like an anime description. The user can
+					also provide other parameters like the number of descriptions to generate from
+					the prompt and the temperature the model will use.
+				</p>
+			</div>
+		</div>
 
 		<div class="constrain section-header" id="process">
 			<h2>The Process</h2>
@@ -103,7 +119,7 @@
 			</div>
 		</div>
 
-		<div class="challenges">
+		<div class="challenges bg-light">
 			<div class="constrain section-header " id="challenges">
 				<h2>Challenges We Faced</h2>
 			</div>
