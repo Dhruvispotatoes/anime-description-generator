@@ -8,7 +8,7 @@
 
 import os
 
-from flask import Flask, escape, request, redirect, url_for, render_template, session
+from flask import Flask, escape, request, render_template
 from utils import get_base_url
 
 from aitextgen import aitextgen
@@ -25,9 +25,11 @@ else:
 
 app.secret_key = os.urandom(64)
 
+
 @app.route(f'{base_url}')
 def home():
     return render_template('index.html')
+
 
 @app.route(f'{base_url}/try', methods=['GET', 'POST'])
 def try_():
@@ -68,9 +70,11 @@ def try_():
         output=map(escape, output)
     )
 
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html')
+
 
 if __name__ == '__main__':
     website_url = 'cocalc9.ai-camp.dev'
