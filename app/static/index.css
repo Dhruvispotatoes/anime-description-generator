@@ -125,6 +125,21 @@
 	}
 }
 
+.challenges {
+	background: rgb(26, 28, 32);
+	padding: 2rem 0;
+	margin-top: 2rem;
+}
+
+.challenges .section-header {
+	margin: 0 auto;
+}
+
+.challenges p {
+	max-width: 50ch;
+	margin: 1rem auto 0 auto;
+}
+
 .carousel {
 	--current-slide: 0;
 	position: relative;

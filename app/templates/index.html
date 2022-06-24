@@ -19,7 +19,6 @@
 	<body>
 		<!-- Hey I see you looking at the source code :). I make funny projects https://dan.onl -->
 		<header class="hero" id="home">
-			<div class="hero-bg"></div>
 			<div class="hero-box constrain">
 				<div class="left">
 					<h1>Anime Description Generator</h1>
@@ -101,6 +100,26 @@
 			<div class="image">
 				<img src="{{ url_for('static', filename='img/step3.png') }}"
 					alt="Frontend code for the try-it page">
+			</div>
+		</div>
+
+		<div class="challenges">
+			<div class="constrain section-header " id="challenges">
+				<h2>Challenges We Faced</h2>
+			</div>
+
+			<div class="constrain">
+				<p>
+					The main challenge we faced was actually the limitation of our original idea.
+					The idea our team had originally planned on was to generate descriptions based
+					on a given title, but training the model to do didn't work out. The titles were
+					often in Romaji, and since we simply concatenated them with the descriptions,
+					the model would become confused by the non-English text often at the beginning
+					of its training data. Additionally, we decided not to use this idea because a
+					title doesn't give enough information for a consistent description, so we
+					decided to change the model to take the start of a description and output the
+					rest.
+				</p>
 			</div>
 		</div>
 

@@ -71,8 +71,13 @@ nav ul a:hover {
 
 .hero,
 .banner {
-	background: #000;
-	backdrop-filter: blur(10px);
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.2) 0%,
+			rgba(0, 0, 0, 0.2) 100%
+		),
+		url("./img/bg.jpg");
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 	color: #fff;
@@ -85,21 +90,6 @@ nav ul a:hover {
 
 .banner {
 	min-height: 0;
-}
-
-.hero-bg {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: url("./img/bg.jpg");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	z-index: -1;
-	opacity: 0.8;
-	user-select: none;
 }
 
 .hero-box {
