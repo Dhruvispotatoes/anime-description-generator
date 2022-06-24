@@ -1,5 +1,3 @@
-from pathlib import Path
-import discord
 from aitextgen import aitextgen
 from discord.ext import commands
 import os
