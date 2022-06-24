@@ -16,7 +16,11 @@
 	<body>
 		<nav>
 			<div class="constrain">
-				<img src="{{ url_for('static', filename='img/aicamp.png') }}" alt="AI Camp Logo">
+				<a href="https://ai-camp.org" target="_blank" rel="noopener noreferrer"
+					class="logo">
+					<img src="{{ url_for('static', filename='img/aicamp.png') }}"
+						alt="AI Camp Logo">
+				</a>
 				<ul>
 					<li><a href="{{ url_for('home') }}">Home</a></li>
 				</ul>
