@@ -64,6 +64,16 @@
 	font-size: 2rem;
 	margin: 0 0 0.5rem 0;
 }
+.steps .text a {
+	color: #fff;
+	text-decoration: none;
+	transition: border 0.2s, opacity 0.2s;
+	border-bottom: 1px solid #fff;
+}
+.steps .text a:hover {
+	border-bottom: 1px solid transparent;
+	opacity: 0.8;
+}
 .steps .text.right {
 	grid-column: 2 / 3;
 	padding-left: 2rem;

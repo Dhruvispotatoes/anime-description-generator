@@ -58,8 +58,14 @@
 				<h3>Step 1: Cleaning the data</h3>
 				<p>
 					The first step in AI machine learning is preprocessing, or "cleaning up" data.
-					In our case, we utilized the Python pandas library to preprocess a anime
-					title-description Kaggle dataset. We ended up with around 8000 usable entries.
+					We found a
+					<a href="https://www.kaggle.com/datasets/alancmathew/anime-dataset"
+						target="_blank" rel="noopener noreferrer">
+						dataset on Kaggle
+					</a>
+					with over 14000 anime scraped from Anime-Planet,
+					but after a few preprocessing steps with the Python pandas library, we ended up
+					with around 8000 usable descriptions.
 				</p>
 			</div>
 			<div class="image">
@@ -69,9 +75,10 @@
 			<div class="text right">
 				<h3>Step 2: Training the model</h3>
 				<p>
-					In order to generate text, we used the GPT-2 model with aitextgen. Later,
-					after a few rounds of trial and error, we chose to train our model with 3000
-					steps at 124M. This took about 35 minutes.
+					In order to generate text, we chose to fine-tune a GPT-2 model with aitextgen.
+					The model we chose had 124M parameters, and after a few rounds of trial and
+					error, the model was able to generate coherent descriptions. The training time
+					for the final model was about 35 minutes.
 				</p>
 			</div>
 			<div class="image">
@@ -82,8 +89,10 @@
 				<h3>Step 3: Creating the interface</h3>
 				<p>
 					We created this page and the try-it interface for our model using HTML, CSS, and
-					JavaScript, and we're using Flask to serve the page and post results for the
-					model.
+					JavaScript, and we're using Flask to serve pages and send the model's output.
+					The user can enter a prompt and select the number of output they want to
+					generate as well as the temperature the model should generate with, and the
+					model will generate corresponding outputs once the form is submitted.
 				</p>
 			</div>
 			<div class="image">
