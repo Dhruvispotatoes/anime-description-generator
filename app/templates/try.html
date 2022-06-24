@@ -8,15 +8,15 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="{{ url_for('static', filename='/main.css') }}">
-		<link rel="shortcut icon" href="{{ url_for('static', filename='/favicon.ico') }}"
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"
 			type="image/x-icon">
 	</head>
 
 	<body>
 		<nav>
 			<div class="constrain">
-				<img src="{{ url_for('static', filename='/img/aicamp.png') }}" alt="AI Camp Logo">
+				<img src="{{ url_for('static', filename='img/aicamp.png') }}" alt="AI Camp Logo">
 				<ul>
 					<li><a href="{{ url_for('home') }}">Home</a></li>
 				</ul>
@@ -31,7 +31,7 @@
 					<p>Use our model in your browser!</p>
 				</div>
 				<div class="right">
-					<img src="{{ url_for('static', filename='/img/book.png') }}"
+					<img src="{{ url_for('static', filename='img/book.png') }}"
 						alt="Barbara holding a python img/book">
 				</div>
 			</div>
