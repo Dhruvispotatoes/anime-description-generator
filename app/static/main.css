@@ -149,9 +149,6 @@ nav ul a:hover {
 	.hero-box .left h1 {
 		font-size: 2.5rem;
 	}
-	.hero-box .left p {
-		font-size: 1rem;
-	}
 	.hero-box .left a {
 		font-size: 1.5rem;
 	}
@@ -280,6 +277,12 @@ p {
 	margin: 0;
 	padding: 0;
 	font-size: 1.2rem;
+}
+
+@media (max-width: 48em) {
+	p {
+		font-size: 1.1rem;
+	}
 }
 
 .constrain {

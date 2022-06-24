@@ -108,9 +108,6 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.steps .text p {
-		font-size: 1rem;
-	}
 	.steps .text.right {
 		grid-column: auto;
 		padding-left: 0;
@@ -299,10 +296,6 @@
 		padding: 4rem 2rem;
 		flex-direction: column;
 		gap: 0.5rem;
-	}
-
-	.slide p {
-		font-size: 1rem;
 	}
 
 	.slide .image img {
