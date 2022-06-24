@@ -108,6 +108,9 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.steps .text p {
+		font-size: 1rem;
+	}
 	.steps .text.right {
 		grid-column: auto;
 		padding-left: 0;
