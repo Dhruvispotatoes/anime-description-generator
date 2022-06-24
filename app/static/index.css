@@ -132,9 +132,30 @@
 	margin: 0 auto;
 }
 
+.challenges .constrain:nth-child(2) {
+	display: flex;
+	gap: 2rem;
+	margin-top: 1rem;
+}
+
+@media screen and (max-width: 48em) {
+	.challenges .constrain:nth-child(2) {
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
+.challenges .constrain:nth-child(2) > * {
+	flex-basis: 100%;
+}
+
 .challenges p {
 	max-width: 50ch;
-	margin: 1rem auto 0 auto;
+	text-indent: 4ch;
+}
+
+.challenges p + p {
+	margin-top: 1rem;
 }
 
 .carousel {
