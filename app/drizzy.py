@@ -1,15 +1,10 @@
 from aitextgen import aitextgen
 from discord.ext import commands
-import os
-from datetime import datetime
-
 
 bot = commands.Bot(command_prefix='~')
-token = 'OTg4OTYzNjU1NzQ1OTU3ODg4.GerOP4.5fB9YjERszqrEyDWUzXIu41isAMx6bBgs5A_Tw'
+token = ''
 
 ai = aitextgen(model_folder="model1/")
-dirpath = os.getcwd()
-now = datetime.now().hour + 1  # this represents EST.
 
 
 @bot.command()
